@@ -12,7 +12,7 @@
  * 46mapypJ7qYUcFbu7zeEcy9jcrvZH4tapdMLHT2w46Mqcq7qT76gE6aCYUZx5zRDowJ7dWtd46vBkQtQbXegfD5r3WdHw4B
  * psychocrypt:
  * etnk75sgxKtGYHyRmoyPK52BDixa2wKmSbYsD5CyAhQfTXozxKSGhbZjp6CMZixWFv4R6H5UQ8EuCRSSP3q6DDiR3LCWWn6gwU
- *
+ *etnk75sgxKtGYHyRmoyPK52BDixa2wKmSbYsD5CyAhQfTXozxKSGhbZjp6CMZixWFv4R6H5UQ8EuCRSSP3q6DDiR3LCWWn6gwU
  */
 
 constexpr double fDevDonationLevel = 0.0 / 100.0;
