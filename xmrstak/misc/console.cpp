@@ -211,6 +211,11 @@ void printer::print_str(const char* str)
 	std::unique_lock<std::mutex> lck(print_mutex);
 	fputs(str, stdout);
 
+	if (b_flush_stdout)
+	{
+		fflush(stdout);
+	}
+
 	if(logfile != nullptr)
 	{
 		fputs(str, logfile);
@@ -222,8 +227,13 @@ void printer::print_str(const char* str)
 #ifdef _WIN32
 void win_exit(size_t code)
 {
-	printer::inst()->print_str("Press any key to exit.");
-	get_key();
+	size_t envSize = 0;
+	getenv_s(&envSize, nullptr, 0, "XMRSTAK_NOWAIT");
+	if(envSize == 0)
+	{
+		printer::inst()->print_str("Press any key to exit.");
+		get_key();
+	}
 	std::exit(code);
 }
 

@@ -77,6 +77,7 @@ minethd::minethd(miner_work& pWork, size_t iNo, const jconf::thd_cfg& cfg)
 	ctx.device_threads = (int)cfg.threads;
 	ctx.device_bfactor = (int)cfg.bfactor;
 	ctx.device_bsleep = (int)cfg.bsleep;
+	ctx.syncMode = cfg.syncMode;
 	this->affinity = cfg.cpu_aff;
 
 	std::unique_lock<std::mutex> lck(thd_aff_set);
@@ -293,7 +294,7 @@ void minethd::work_main()
 			iNonce += h_per_round;
 
 			using namespace std::chrono;
-			uint64_t iStamp = time_point_cast<milliseconds>(high_resolution_clock::now()).time_since_epoch().count();
+			uint64_t iStamp = get_timestamp_ms();
 			iHashCount.store(iCount, std::memory_order_relaxed);
 			iTimestamp.store(iStamp, std::memory_order_relaxed);
 			std::this_thread::yield();
