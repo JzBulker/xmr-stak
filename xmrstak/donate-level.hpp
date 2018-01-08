@@ -10,7 +10,7 @@
  * If you plan on changing this setting to 0.0 please consider making a one off donation to our wallets:
  * fireice-uk:
  * 46mapypJ7qYUcFbu7zeEcy9jcrvZH4tapdMLHT2w46Mqcq7qT76gE6aCYUZx5zRDowJ7dWtd46vBkQtQbXegfD5r3WdHw4B
- * psychocrypt:
+ * SumonzwAeyMDvMHQqLJ8WkBgRsEDk8HKSfmAuDRsCNsgMf2zEHSsWisQVgxJB7xrtF2DnduyYtkMVN95zQRSoJWzBmc59nX7nk1
  * etnk75sgxKtGYHyRmoyPK52BDixa2wKmSbYsD5CyAhQfTXozxKSGhbZjp6CMZixWFv4R6H5UQ8EuCRSSP3q6DDiR3LCWWn6gwU
  * etnkFFSgPCvRYzEESQSevAJqhDDqnwwZVALiT3BTmzyb7sqtRHVc612eHMDQ3XGUTkVtrsbfQoDzbSHacMhobcfe6ZGmJyvAdX
  */
